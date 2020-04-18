@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(238, 182, 216);
+    font-family: 'Fredoka One', cursive;
+    color: rgb(4, 54, 71);
+    text-transform: uppercase;
+}
+form{
+    width: 600px;
+    height: 700px;
+   margin-left: auto;
+   margin-right: auto;
+    background-image: url("https://img.freepik.com/free-photo/cute-flowers-pink-background-with-space-right_23-2147691006.jpg?size=626&ext=jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: lightblue double 5px;
+    box-shadow: rgb(31, 66, 78) 2px 3px 1px 5px;
+    border-radius: 20px;
+}
+.list-conatiner{
+    width: 600px;
+    height: 550px;
+    display:flex;
+    
+}
+#Title{
+    font-size: 32px;
+    font-style: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;;
+}
+.day{
+    font-family: 'Lobster', cursive;
+    float: right;
+    position: relative;
+    right: 20px;
+    font-size: 38px;
+    padding: 20px;
+}
+
+#todo{
+    width: 220px;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
+    font-size: 24px;
+}
+
+#todoinput{
+    width: 160px;
+    height: 20px;
+    margin:0px;
+    border-radius: 20px;
+    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
+}
+#addlist{
+    margin: 2px;
+    position: relative;
+    left:-7px;
+    top:15px;
+    height: 40px;
+    width: 40px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/material-design-content-icons/512/add-circle-512.png");
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+
+#rightside{
+    width: 240px;
+    margin-top: 30px;
+    position: relative;
+    left: 40px;
+    
+}
+
+#priorities{
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
+    text-align: center;
+    padding-bottom:10px;
+    
+}
+
+#prioritytitle{
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+
+#note{
+    height: 345px;
+    border-radius: 20px;
+    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
+    background-color: rgb(170, 189, 250, 0.3);
+    
+    
+}
+#notetitle{
+    position: relative;
+    left:10px;
+    top:10px;
+}
