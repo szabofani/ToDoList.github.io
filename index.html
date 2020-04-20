@@ -3,38 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDoList</title>
+    <title>ToDo</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="">
-        <div id="Title"> It's gonna be a really </br>
-            <span class="day">good day!</span></div>
-    <div class="list-conatiner" style="background-color:rgb(161, 175, 255)');">
+<main>
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Make a To-Do List</li>
         
-            <fieldset id="todo">
-                <legend>My Todos:</legend>
-                <input id="todoinput" type="text"> <button id="addlist"></button>
-                    <ul id="todolist"></ul>
-                </fieldset>
-        <div id="rightside"> 
-            <div id="priorities">
-                 <div id="prioritytitle">Top 3 priorities</div>
-                    <input type="checkbox"> <input type="text"> </br>
-                    <input type="checkbox"> <input type="text"> </br>
-                    <input type="checkbox"> <input type="text"> </br>
-            </div>
-                <div id="note">
-                    <div id="notetitle">notes/move to tomorrow:</div>
-                    <input id="noteinput" type="text"> <button id="addnote">Add</button>
-                        <ul id="notelist"></ul>
-                </div>
-        </div>
-    </div>
-    </form>
-    
+      </ul>
+</main>
+//\u00D7
+
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="script.js"></script>
 </body>

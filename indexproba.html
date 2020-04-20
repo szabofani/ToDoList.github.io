@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="styleproba.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <div id="Title"> It's gonna be a really </br>
+            <span class="day">good day!</span></div>
+    <div class="list-conatiner" style="background-color:rgb(161, 175, 255)');">
+        
+            <fieldset id="todo">
+                <legend>My Todos:</legend>
+                <div class="lst">
+                <input id="myInput" type="text" placeholder="Title..."> <button onclick="addLi()" class="addBtn"></button>
+                    <ul id="list">
+                        
+                    </ul>
+                </div>
+                </fieldset>
+        <div id="rightside"> 
+            <div id="priorities">
+                 <div id="prioritytitle">Top 3 priorities</div>
+                    <input class="circle" type="checkbox"> <label for="checkbox"><input class="textprio" type="text"></label> </br>
+                    <input class="circle" type="checkbox"> <label for="checkbox"><input class="textprio" type="text"></label></br>
+                    <input class="circle" type="checkbox"> <label for="checkbox"><input class="textprio" type="text"></label></br>
+            </div>
+                
+        </div>
+    </div>
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="scriptproba.js"></script>
+</body>
+</html>

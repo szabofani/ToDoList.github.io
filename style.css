@@ -1,104 +1,138 @@
-body{
-    background-color: rgb(238, 182, 216);
-    font-family: 'Fredoka One', cursive;
-    color: rgb(4, 54, 71);
-    text-transform: uppercase;
-}
-form{
-    width: 600px;
-    height: 700px;
-   margin-left: auto;
-   margin-right: auto;
-    background-image: url("https://img.freepik.com/free-photo/cute-flowers-pink-background-with-space-right_23-2147691006.jpg?size=626&ext=jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: lightblue double 5px;
-    box-shadow: rgb(31, 66, 78) 2px 3px 1px 5px;
-    border-radius: 20px;
-}
-.list-conatiner{
-    width: 600px;
-    height: 550px;
-    display:flex;
-    
-}
-#Title{
-    font-size: 32px;
-    font-style: inherit;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 20px;;
-}
-.day{
+body {
+    margin: 0;
+    min-width: 250px;
+    background-color: rgb(163, 198, 238);
     font-family: 'Lobster', cursive;
-    float: right;
-    position: relative;
-    right: 20px;
-    font-size: 38px;
-    padding: 20px;
-}
-
-#todo{
-    width: 220px;
-    margin: 25px;
-    border-radius: 20px;
-    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
-    font-size: 24px;
-}
-
-#todoinput{
-    width: 160px;
-    height: 20px;
-    margin:0px;
-    border-radius: 20px;
-    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
-}
-#addlist{
-    margin: 2px;
-    position: relative;
-    left:-7px;
-    top:15px;
-    height: 40px;
-    width: 40px;
-    background-image: url("https://cdn4.iconfinder.com/data/icons/material-design-content-icons/512/add-circle-512.png");
-    background-size: cover;
-    border-radius: 50%;
     
-}
-
-#rightside{
-    width: 240px;
-    margin-top: 30px;
+    
+  }
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  main{
+      width: 450px;
+      height:600px;
+      margin-top: 100px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
     position: relative;
-    left: 40px;
-    
-}
-
-#priorities{
-    margin-bottom: 40px;
-    border-radius: 20px;
-    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
-    text-align: center;
-    padding-bottom:10px;
-    
-}
-
-#prioritytitle{
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background:  #f9f9f9;
     font-size: 18px;
-    margin-bottom: 10px;
+    transition: 0.2s;
     
-}
-
-#note{
-    height: 345px;
-    border-radius: 20px;
-    box-shadow: rgb(58, 102, 117) 2px 2px 3px 2px;
-    background-color: rgb(170, 189, 250, 0.3);
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #fdb5b5;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-image: url(https://i.pinimg.com/736x/a6/b3/b8/a6b3b830be53b6fdb2c6ff4ecc8e9918.jpg);
+    background-size: cover;
+    padding: 30px 40px;
+    color: rgb(190, 165, 19);
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    font-size: 32px;
     
-    
-}
-#notetitle{
-    position: relative;
-    left:10px;
-    top:10px;
-}
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 22px;
+    height:48px;
+    font-family: 'Lobster', cursive;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: rgb(59, 51, 2);
+    text-shadow: 1px 1px 1px whitesmoke;
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
